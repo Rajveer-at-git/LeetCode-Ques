@@ -7,7 +7,8 @@
 // And all other functions like size,erase,clear,insert,begin,end,rbegin,rend,front,back which works in 
 // vector also works in list
 // In memory list is implemented by linked list
-// deque and list have same 
+// deque and list have same operations but in deque we have contiguous memory allocation 
+// so deq[3] is valid in it but invalid in list.
 #include <iostream>
 #include <vector>
 #include <string>
