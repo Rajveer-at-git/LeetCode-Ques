@@ -1,5 +1,5 @@
 // In this map it doesn't change the order into ascending order like that of in map 
-// The order is opposite as the insertion order. Similar to putting elements in a stack
+// The order is random. 
 // The keys cannot be duplicate
 // Comparison: 
 // Unordered map is the most frequently used map, cause operations like insert,erase,count have O(1)
