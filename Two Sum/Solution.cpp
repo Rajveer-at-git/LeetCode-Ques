@@ -1,25 +1,15 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        vector<int> result;
-        bool flag = false;
+        unordered_map<int,int> um;
         for(int i=0;i<nums.size();i++)
         {
-            for(int j=i+1;j<nums.size();j++)
-            {
-                if(nums[i]+nums[j] == target)
-                {
-                    result.push_back(i);
-                    result.push_back(j);
-                    flag = true;
-                    break;
-                }
-            }
-            if(flag)
-                break;
+            int required = target - nums[i];
+            if(um.count(required))
+                return{um[required],i};
+            else
+                um.insert({nums[i],i});
         }
-        return result;
+        return{};
     }
 };
-// completed but slow
-// Note Use learn and use hashmap for this question to get the fastest solution
