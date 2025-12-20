@@ -47,7 +47,7 @@ int main() {
     cout << endl;
 
     // find(): for finding an element 
-    // if the key is found it returns it iterator
+    // if the key is found it returns its iterator
     // if key not found, it returns the end() (the value next to the last value in the map usually garbage)
     if(m.find("tv") != m.end())
         cout << "found\n";
@@ -56,4 +56,6 @@ int main() {
 
     cout << "Size of map: " << m.size() << endl;
     cout << "is map empty: " << m.empty() << endl;
+
+    cout << m.count("tv") << endl;
 } 
