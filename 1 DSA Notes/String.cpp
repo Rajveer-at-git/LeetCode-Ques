@@ -60,7 +60,10 @@ int main() {
     string s20 = "Sasuke";
     s10.swap(s20); // Now s1 is "Sasuke"
     cout << s10 << " and " << s20 << endl;
- 
-    
+
+    string str4 = "Rajvee";
+    string ch = "r Choudhary";
+    str4 = str4+ch;
+    cout << str4 << endl;
 }
 
