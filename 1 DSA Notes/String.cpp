@@ -39,8 +39,17 @@ int main() {
     { 
         cout << "Vegeta comes after Goku in the dictionary!" << endl; // lexicographical order
     }
+    // To find whether an char exists in the string or not 
+    string ss = "calisthenics";
+    char target = 'z';
 
-    // Finding Things
+    if (ss.find(target) != string::npos) {
+        cout << "Found it!" << endl;
+    } else {
+        cout << "Not present." << endl;
+    }
+    
+    // Finding Things Indexes
     string s = "The world is not enough";
     size_t found = s.find("world");
 
@@ -65,5 +74,6 @@ int main() {
     string ch = "r Choudhary";
     str4 = str4+ch;
     cout << str4 << endl;
+
 }
 
