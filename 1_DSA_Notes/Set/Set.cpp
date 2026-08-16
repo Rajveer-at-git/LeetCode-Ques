@@ -35,11 +35,12 @@ int main() {
     cout << endl;
 
     // It also have lower_bound and upper_bound
-    // lower_bound means value should not be less than this
-    // upper_bound means value should not be more than or equal to this
+    // lower_bound means >=, first checks for the = condition, if not present, looks for > value.
+    // upper_bound means >, checks for the value greater than the passed value.
     // lower_bound(x) : give the iterator to that value which should be dereferenced (using * operator)
     // if that value doesn't exist it returns the value just greater than that no.(x)
     // if that no. doesn't exist and no no. is greater than that it returns end()
+
     cout << "lower bound: " << *(s.lower_bound(4)) << endl;
     s.erase(4);
     cout << "lower bound: " << *(s.lower_bound(4)) << endl;
