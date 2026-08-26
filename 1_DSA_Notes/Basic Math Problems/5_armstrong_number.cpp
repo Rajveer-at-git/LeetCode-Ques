@@ -12,15 +12,13 @@ bool arm_strong_number(int n)
         n /= 10;
         arm_n = arm_n + round(pow(num, power));
     }
-    if(arm_n == duplicate)
-        return true;
-    else
-        return false;
+        return arm_n == duplicate;
+
 }
 
 int main()
 {
-    int n=123;
+    int n=371;
     bool arm_n =  arm_strong_number(n);
     if(arm_n)
         cout << n << " is an Armstrong Number.\n";
